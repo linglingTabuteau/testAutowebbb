@@ -1,0 +1,22 @@
+.Button {
+  border             : red 2px solid;
+  border-radius      : 50px;
+  display            : inline-block;
+  color              : red;
+  margin             : 20px;
+  padding            : 15px;
+  font-size          : 2vw;
+  transition-duration: "all 0.4s";
+  &:hover {
+    // transform:scale(1.1);
+    // transition: 1s;
+    background-color: red;
+    color:white;
+    }
+
+}
+
+// .button:hover {
+//   background-color: red;
+//   color: white;
+// }
