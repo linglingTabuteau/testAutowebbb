@@ -51,6 +51,7 @@ const Cards = () => (
           imageUrl="/assets/pole.svg"
           testLabel="yes"
           infoArr ={secondArray}
+          additionalLabel="Inclut le contenu de l'offre START"
         />
       </Col>
       <Col lg="4" sm="6">
@@ -60,6 +61,7 @@ const Cards = () => (
           imageUrl="/assets/win.svg"
           testLabel="yes"
           infoArr ={thirdArray}
+          additionalLabel="Inclut le contenu de l'offre START + Pole"
         />
       </Col>
     </Row>

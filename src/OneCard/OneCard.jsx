@@ -17,20 +17,29 @@ const OneCard = (props) => {
       <Col className="photo-size">
         <CardImg top width="100%" src={props.imageUrl} alt={props.title} />
       </Col>
-      <CardText>{props.testLabel}</CardText>
-      <CardBody>
-        <CardText>
-          {
-            props.infoArr.map(text => (
-              <TextCards
-                imgUrl="/assets/check-bg-green.svg"
-                text={text}
-                />
-            ))
-          }
-        </CardText>
-      </CardBody>
-    </Card>
+      {
+        props.additionalLabel &&
+        <div className="AdditionalBloc">
+          <p style={{ padding: "3px", backgroundColor:"#F1F1F1", borderRadius:"50px"}}>
+            {props.additionalLabel}
+          </p>
+        <img src="/assets/icon-plus.svg" alt="icon plus"/>
+        </div>
+
+      }
+<CardBody>
+  <CardText>
+    {
+      props.infoArr.map(text => (
+        <TextCards
+          imgUrl="/assets/check-bg-green.svg"
+          text={text}
+        />
+      ))
+    }
+  </CardText>
+</CardBody>
+    </Card >
   );
 };
 

@@ -1,9 +1,15 @@
-.OneCard{
-  border:none;
+.OneCard {
+  border    : none;
+  // shadow card
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  margin: 15px;
-  .photo-size{
-    width: 300px;
+  margin    : 30px;
+
+  .photo-size {
+    width  : 300px;
     padding: 0px;
+  }
+
+  .AdditionalBloc {
+    margin-top: 45px;
   }
 }
